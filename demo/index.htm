@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+    <style media="screen">
+
+    </style>
+</head>
+<body>
+    <canvas id="wave" width="600" height="600">您的浏览器不支持canvas</canvas>
+</body>
+</html>
+<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js" charset="utf-8"></script>
+<script src="../index.js" charset="utf-8"></script>
+<script type="text/javascript">
+var SW = new SiriWave({
+    width: $(window).width(),
+    height: 200
+});
+SW.setSpeed(0.01);
+SW.start();
+</script>
